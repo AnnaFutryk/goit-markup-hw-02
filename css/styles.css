@@ -140,7 +140,7 @@ body {
 }
 /* ============/Our team section============ */
 /* ============footer============ */
-.footer {
+.footer-section {
     background-color: var(--dark-bcg-color);
 }
 .logo-light {
@@ -169,7 +169,7 @@ body {
 
 .filter-btn:hover,
 .filter-btn:focus {
-    background-color: var(--ocean-bcg-color)
+    background-color: var(--ocean-bcg-color);
     color: var(--white-txt-color);
 }
 
