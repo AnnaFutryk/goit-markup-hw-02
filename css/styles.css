@@ -1,13 +1,22 @@
+/* base style */
 :root {
+    /* Font */
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
-    --primary-text-color: #434455;
-    --secondary-text-color: #2E2F42;
-    --accent-text-color: #404BBF;
-    --dark-background-color: #2E2F42;
-    --light-background-color: #F4F4FD;
-    --card-background-color: #FFFFFF;
-
+    /* Text color */
+    --primary-slate-txt-color: #434455;
+    --secondary-dark-txt-color: #2E2F42;
+    --accent-ocean-txt-color: #404BBF;
+    --descr-ligh-txt-color: #E7E9FC;
+    --iris-brand-txt-color: #4D5AE5;
+    --white-txt-color: #FFFFFF;
+    /* Background color */
+    --dark-bcg-color: #2E2F42;
+    --light-bcg-color: #F4F4FD;
+    --white-bcg-color: #FFFFFF;
+    --iris-bcg-color: #4D5AE5;
+    --ocean-bcg-color: #404BBF;
+    /* Others */
 }
 
 .list {
@@ -16,11 +25,12 @@
 
 .link {
     text-decoration: none;
+    color: currentColor;
 }
 
 body {
     font-family: var(--primary-font);
-    color: var(--primary-text-color);
+    color: var(--primary-slate-txt-color);
 }
 /* ============Components============= */
 .title {
@@ -30,7 +40,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--secondary-text-color);
+    color: var(--secondary-dark-txt-color);
 }
 
 .subtitle {
@@ -38,16 +48,15 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
+    color: var(--secondary-dark-txt-color);
 }
 
 .section-description {
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.section-description-light {
-    color: #E7E9FC;;
-}
+
 /* ============/Components============= */
 
 /* ============Header============= */
@@ -58,26 +67,25 @@ body {
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--secondary-text-color);
+    color: var(--secondary-dark-txt-color);
 }
 .logo-part {
-    color: #4D5AE5;
+    color: var(--iris-brand-txt-color);
 }
 
 .menu-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+    letter-spacing: 0.02em; 
 }
 .menu-link:hover,
 .menu-link:focus {
-    color: var(--accent-text-color);
+    color: var(--accent-ocean-txt-color);
 }
 
 .menu-link.current {
-    color: var(--accent-text-color);
+    color: var(--accent-ocean-txt-color);
 }
 
 .contact-link{
@@ -86,17 +94,16 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
 }
 .contact-link:hover,
 .contact-link:focus {
-    color: var(--accent-text-color);
+    color: var(--accent-ocean-txt-color);
 }
 /* ============/Header============= */
 
 /* ============Hero============= */
 .hero {
-    background-color: var(--dark-background-color);
+    background-color: var(--dark-bcg-color);
 }
 
 .main-title {
@@ -105,63 +112,66 @@ body {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--white-txt-color);
 }
 
 .main-btn {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background-color: #4D5AE5;
+    color: var(--white-txt-color);
+    background-color: var(--iris-bcg-color);
     cursor: pointer;
 }
 .main-btn:hover,
 .main-btn:focus {
-    background-color: #404BBF;;
+    background-color: var(--ocean-bcg-color);
 }
 /* ============/Hero============= */
 
 /* ============Our team section============ */
-.team {
-    background-color: var(--light-background-color);
+.team-section {
+    background-color: var(--light-bcg-color);
 }
-.card {
-    background-color: var(--card-background-color);
+.team-item {
+    background-color: var(--white-bcg-color);
 }
 /* ============/Our team section============ */
 /* ============footer============ */
 .footer {
-    background-color: var(--dark-background-color);
+    background-color: var(--dark-bcg-color);
 }
 .logo-light {
-    color: #FFFFFF;
-    line-height: 1.17;
+    color: var(--white-txt-color);
+}
+
+.section-description-light {
+    color: var(--descr-ligh-txt-color)
 }
 /* ============footer============ */
+
 /* ==========Portfolio============= */
-.btn {
+.filter-btn {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     align-items: center;
     text-align: center;
-    color: #4D5AE5;
-    background-color: var(--light-background-color);
+    color: var(--iris-brand-txt-color);
+    background-color: var(--light-bcg-color);
     cursor: pointer;
     display: flex;
 }
 
-.btn:hover,
-.btn:focus {
-    background-color: #404BBF;
-    color: #FFFFFF;
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: var(--ocean-bcg-color)
+    color: var(--white-txt-color);
 }
-
-
-
 
 
 /* ==========/Portfolio============= */
